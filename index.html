@@ -45,7 +45,7 @@
 </style>
 <script>
     const timer = document.querySelector('#timer')
-    const nowMs = new Date().getTime()
-    const foundingMs = new Date(2013, 0, 1)
-    timer.textContent = Math.round((nowMs - foundingMs) / 1000)
+    const now = new Date()
+    const founding = new Date(2013, 0, 1)
+    timer.textContent = Math.round((now - founding) / 1000)
 </script>
