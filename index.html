@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How long does The Odin Project take</title>
+</head>
+<body>
+    <div class="container">
+        <p class="bigprint">It took everybody who completed <a href="https://www.theodinproject.com/">The Odin Project</a>:</p>
+        <p>between <span class="time">1</span> and <span class="time" id="timer"></span> seconds.</p>
+        <p class="smallprint">(rounded up to the nearest full second)</p>
+
+    </div>
+</body>
+</html>
+<style>
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+    }
+    .container {
+        text-align: center;
+    }
+    p {
+        margin-block: 1rem;
+        color: rgb(55, 65, 81);
+    }
+    a {
+        color: rgb(169, 121, 43);
+        text-decoration: none;
+    }
+    .time {
+        font-weight: bold;
+        color: #000;
+    }
+    .smallprint {
+        color: #555;
+        font-size: 12px;
+    }
+</style>
+<script>
+    const timer = document.querySelector('#timer')
+    const nowMs = new Date().getTime()
+    const foundingMs = new Date(2013, 0, 1)
+    timer.textContent = Math.round((nowMs - foundingMs) / 1000)
+</script>
