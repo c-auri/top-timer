@@ -78,12 +78,11 @@
     }
 </style>
 <script>
-    const updateTimer = (() => {
+    (() => {
         const timer = document.querySelector('#timer')
         const founding = new Date(2013, 0, 1)
-        return () => timer.textContent = Math.ceil((new Date() - founding) / 1000)
+        const updateTimer = () => timer.textContent = Math.ceil((new Date() - founding) / 1000)
+        updateTimer()
+        setInterval(updateTimer, 500)
     })()
-
-    updateTimer()
-    setInterval(updateTimer, 500)
 </script>
