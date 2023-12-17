@@ -69,9 +69,13 @@
     .smallprint {
         font-size: .8rem;
         color: darkgray;
+        & a {
+            color: inherit;
+        }
+        & a:hover {
+            color: gray;
+        }
     }
-    .smallprint a { color: inherit; }
-    .smallprint a:hover { color: gray;}
 </style>
 <script>
     const setTimer = (() => {
