@@ -48,7 +48,8 @@
 </style>
 <script>
     const timer = document.querySelector('#timer')
-    const now = new Date()
     const founding = new Date(2013, 0, 1)
-    timer.textContent = Math.ceil((now - founding) / 1000)
+    const setTimer = () => timer.textContent = Math.ceil((new Date() - founding) / 1000)
+    setTimer()
+    setInterval(setTimer, 1000)
 </script>
