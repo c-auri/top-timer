@@ -1,2 +1,2 @@
 # The Odin Project Timer
-They may not want you to know this, but the truth *is* out there.
+Because some people really need to know.
