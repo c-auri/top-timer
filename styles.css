@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    margin: 2rem;
+    height: 11rem;
+}
+
+p {
+    margin-block: 1rem;
+    font-size: 1.2rem;
+    color: rgb(55, 65, 81);
+}
+
+a {
+    color: rgb(169, 121, 43);
+    text-decoration: none;
+}
+
+.time {
+    font-weight: bold;
+    color: black;
+}
+
+footer {
+    padding: .5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: gainsboro;
+}
+
+.smallprint {
+    font-size: .8rem;
+    color: darkgray;
+    & a {
+        color: inherit;
+    }
+    & a:hover {
+        color: gray;
+    }
+}
